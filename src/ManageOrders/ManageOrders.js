@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
+import "./ManageOrders.css";
 
 const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://desolate-savannah-82485.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/services/${id}`;
+    const url = `https://desolate-savannah-82485.herokuapp.com/services/${id}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -26,12 +27,15 @@ const ManageOrders = () => {
 
   return (
     <div>
-      <h2>This is Orders</h2>
+      <h2 className="m-3">This is Yours All Orders</h2>
       {orders.map((service) => (
-        <div key={service._id}>
-          <h3>{service.name}</h3>
+        <div key={service._id} className="orderlist">
+          <img className="img-fluid" src={service.img} alt="" />
+          <h3 className="p-2">Name: {service.name}</h3>
+          <h4 className="p-1">Price: ${service.price}</h4>
+          <p className="p-3">Details:{service.description}</p>
           <button
-            className="btn btn-danger"
+            className="btn btn-danger mb-2"
             onClick={() => handleDelete(service._id)}
           >
             Delete

@@ -8,17 +8,19 @@ const AddOffers = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    axios.post("http://localhost:5000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Added successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://desolate-savannah-82485.herokuapp.com/services", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Added successfully");
+          reset();
+        }
+      });
   };
 
   return (
     <div className="add-offers">
-      <h3 className="m-3">Please Add Your Order</h3>
+      <h3 className="m-3">Booking Form</h3>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name", { required: true, maxLength: 20 })}

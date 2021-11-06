@@ -9,8 +9,8 @@ import AuthProvider from "./Contexts/AuthProvider";
 // import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Booking from "./Pages/Booking/Booking/Booking";
 import ManageOrders from "./ManageOrders/ManageOrders";
+import AdminPanel from "./Pages/AdminPanel/AdminPanel";
 // import AddOffers from "./Pages/AddOffers/AddOffers";
-// import ManageAllOrder from "./Manage-All-Order/ManageAllOrder";
 
 function App() {
   return (
@@ -37,9 +37,9 @@ function App() {
             <Route path="/manageOrders">
               <ManageOrders></ManageOrders>
             </Route>
-            {/* <Route path="/manageOrder">
-              <ManageAllOrder></ManageAllOrder>
-            </Route> */}
+            <Route path="/adminPanel">
+              <AdminPanel></AdminPanel>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

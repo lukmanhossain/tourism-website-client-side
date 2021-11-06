@@ -1,0 +1,16 @@
+.dashboard-area {
+  background: rgb(27, 24, 24);
+  color: white;
+  height: 300px;
+  border-radius: 10px;
+}
+.adminpanel-container {
+  overflow-x: hidden;
+}
+.admin-menu {
+  list-style: none;
+  cursor: pointer;
+}
+.admin-menu:hover {
+  color: blue;
+}

@@ -1,0 +1,17 @@
+.booking-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+.booking-details {
+  background-color: rgb(233, 220, 245);
+  border-radius: 15px;
+  width: 700px;
+  padding: 50px;
+  height: 630px;
+}
+
+.booking-details img {
+  height: 250px;
+  border-radius: 10px;
+}
