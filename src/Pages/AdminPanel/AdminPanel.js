@@ -36,12 +36,6 @@ const AdminPanel = () => {
                 >
                   Manage Orders
                 </li>
-                <li
-                  onClick={() => setControl("status")}
-                  className="admin-menu p-2"
-                >
-                  Orders Status
-                </li>
               </div>
             </div>
           </div>

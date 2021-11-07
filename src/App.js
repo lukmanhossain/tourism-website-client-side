@@ -6,11 +6,11 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Login from "./Pages/Login/Login/Login";
 import Header from "./Pages/Home/Shared/Header/Header";
 import AuthProvider from "./Contexts/AuthProvider";
-// import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Booking from "./Pages/Booking/Booking/Booking";
 import ManageOrders from "./ManageOrders/ManageOrders";
 import AdminPanel from "./Pages/AdminPanel/AdminPanel";
-// import AddOffers from "./Pages/AddOffers/AddOffers";
+import AddOffers from "./Pages/AddOffers/AddOffers";
 
 function App() {
   return (
@@ -28,18 +28,15 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            {/* <Route>
-              <AddOffers></AddOffers>
-            </Route> */}
-            <Route path="/booking/:serviceid">
+            <PrivateRoute path="/booking/:serviceid">
               <Booking></Booking>
-            </Route>
-            <Route path="/manageOrders">
+            </PrivateRoute>
+            <PrivateRoute path="/manageOrders">
               <ManageOrders></ManageOrders>
-            </Route>
-            <Route path="/adminPanel">
+            </PrivateRoute>
+            <PrivateRoute path="/adminPanel">
               <AdminPanel></AdminPanel>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

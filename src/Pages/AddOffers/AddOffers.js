@@ -6,6 +6,7 @@ import "./AddOffers.css";
 const AddOffers = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
+    data.status = "pending";
     console.log(data);
 
     axios
