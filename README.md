@@ -1,7 +1,11 @@
-#Client side Code Link: \*https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-lukmanhossain
+#Client side Live Link: https://relaxed-goldberg-e61793.netlify.app
 
-live link:
+#Server Side Live Link: https://desolate-savannah-82485.herokuapp.com
 
-#Server Side Code Link: \*https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-lukmanhossain
+#Short Description About Our Site:-
 
-live link: \*https://desolate-savannah-82485.herokuapp.com
+- This is a tourist related Website
+- Here Anyone Book their offers and they join Special Events
+- We have experienced guard for our clients Safety
+- We have many years Experience of this field
+- Our 95% customars are happy by our Services.
